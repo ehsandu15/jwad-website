@@ -17,6 +17,9 @@
     },
     "tiktok_event": {
       "type": "string"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }

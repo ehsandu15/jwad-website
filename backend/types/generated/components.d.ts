@@ -59,6 +59,7 @@ export interface LinkHeroDescoverLink extends Schema.Component {
   };
   attributes: {
     label: Attribute.String;
+    href: Attribute.String;
   };
 }
 
@@ -185,6 +186,7 @@ export interface ButtonActionBtn extends Schema.Component {
     snapchat_event: Attribute.String;
     fb_event: Attribute.String;
     tiktok_event: Attribute.String;
+    href: Attribute.String;
   };
 }
 

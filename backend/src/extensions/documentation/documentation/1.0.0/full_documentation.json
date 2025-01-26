@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-09-07T10:27:14.173Z"
+    "x-generation-date": "2024-09-07T12:20:46.098Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6523,6 +6523,9 @@
           },
           "tiktok_event": {
             "type": "string"
+          },
+          "href": {
+            "type": "string"
           }
         }
       },
@@ -8105,6 +8108,9 @@
                   "type": "number"
                 },
                 "label": {
+                  "type": "string"
+                },
+                "href": {
                   "type": "string"
                 }
               }
@@ -10482,6 +10488,9 @@
             "type": "string"
           },
           "label": {
+            "type": "string"
+          },
+          "href": {
             "type": "string"
           }
         }
