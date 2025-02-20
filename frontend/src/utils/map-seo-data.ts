@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { imagePrefixURl } from './image-prefix';
 
 export const mapSeoToMetadata = (seo: Seo): Metadata => {
+    if (!seo) return {};
     const facebook = seo.metaSocial?.find(
         (meta) => meta.title === 'Facebook' || meta.title === 'facebook'
     );

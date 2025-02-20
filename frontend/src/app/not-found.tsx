@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+export const dynamic = 'force-dynamic';
+
 const NotFound = () => {
     return (
         <main className="fle min-h-screen flex-col items-center justify-center bg-gray-100">

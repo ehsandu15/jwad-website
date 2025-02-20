@@ -16,15 +16,15 @@ const Portfolio = async () => {
     return (
         <section
             className="my-20 flex items-center justify-center"
-            id={portfolio.data.attributes.section_id}
+            id={portfolio?.data?.attributes?.section_id}
         >
             <div className="app-container flex flex-col items-center justify-center">
                 <span className="flex w-1/2 flex-col items-center justify-center max-md:w-full">
                     <h4 className="text-5xl font-bold leading-[72px] text-darkBlack">
-                        {portfolio.data.attributes.heading}
+                        {portfolio?.data?.attributes?.heading}
                     </h4>
                     <p className="text-sm font-normal text-[#4F5057] max-sm:text-center">
-                        {portfolio.data.attributes.subHeading}
+                        {portfolio?.data?.attributes?.subHeading}
                     </p>
                 </span>
                 <PortfolioList />

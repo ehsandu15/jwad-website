@@ -14,7 +14,7 @@ import { Seo } from '@/types/seo-types';
 
 export async function generateViewport() {
     const metadata = await getMetadata();
-    const { metaViewport } = metadata.data.attributes.seo;
+    const { metaViewport } = metadata?.data?.attributes?.seo || {};
 
     return {
         viewport: metaViewport,
@@ -22,7 +22,7 @@ export async function generateViewport() {
 }
 export async function generateMetadata(): Promise<Metadata> {
     const metadata = await getMetadata();
-    const { seo, social_media_meta } = metadata.data.attributes;
+    const { seo, social_media_meta } = metadata?.data?.attributes || {};
 
     if (!seo || !social_media_meta)
         return {
@@ -39,9 +39,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
     return {
         ...generatedMeta,
-        openGraph: { ...generatedMeta.openGraph, type: 'website' },
+        openGraph: { ...generatedMeta?.openGraph, type: 'website' },
     };
 }
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col" id="main-app">

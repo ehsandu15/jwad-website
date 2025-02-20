@@ -16,6 +16,8 @@ import { mapSeoToMetadata } from '@/utils/map-seo-data';
 
 export const revalidate = 1800;
 
+export const dynamic = 'force-dynamic';
+
 type Props = {
     params: any;
     searchParams: {

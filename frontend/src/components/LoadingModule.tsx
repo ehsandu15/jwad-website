@@ -16,10 +16,10 @@ async function LoadingModule({ logo }: { logo?: IStrapiImageResponse }) {
             <div className="flex size-44 flex-col items-center justify-center px-6 max-md:w-10/12 max-sm:w-full">
                 <Image
                     src={imagePrefixURl(
-                        logoResponse?.data.attributes.logo.data.attributes.url
+                        logoResponse?.data.attributes?.logo.data.attributes.url
                     )}
                     alt={
-                        logoResponse?.data.attributes.logo.data.attributes
+                        logoResponse?.data.attributes?.logo.data.attributes
                             .alternativeText
                     }
                     width={144}
